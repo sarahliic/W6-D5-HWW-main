@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .navpar{
+            width: 100%;
+            height: 86px;
+           display: flex;
+           justify-content:space-between;
+           align-items: center;
+           background-color: rgb(10, 10, 10);
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    
+        }
+        .navparprodect{
+
+            list-style: none;
+            display: flex;
+            font-family: Poppins;
+            font-weight: 600;
+            word-wrap: break-word;
+            color: white;
+        }
+        .navparprodect li{
+            margin-left: 10px;
+            transition: 0.5s ease;
+            cursor: pointer;
+        }
+        .navparprodect li:hover{
+            font-size: larger;
+        }
+        .navpar p{
+            font-family: Poppins;
+            font-size: large;
+            font-weight: 600;
+            word-wrap: break-word;
+            color: white;
+            padding-right: 20px;
+        }
+        .navparimg{
+            display: flex;
+            flex-direction: row;
+            list-style:none;
+        }
+        .navparimg li{
+            margin-left: 30%;
+
+        }
+        .navparimg li img {
+             width: 20px; 
+             transition: 0.5s ease;
+             cursor: pointer;
+        }
+        .navparimg li img:hover{
+            width: 23px; 
+        }
+        .contenrsalry{
+        width: 100%;
+        height: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+       .adressecontenr{
+       display: flex;
+       flex-direction: column;
+       align-items: end;
+       }
+       .dataadresse{
+        width:95vh;
+        height: 40vh;
+        background: #FAF9F9;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        direction: rtl;
+        text-align: right;
+        
+       }
+       .adresscontenrright{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+       }
+       .adresscontenrleft{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+       }
+       .adresscontenrleft button{
+        padding: 8px;
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        font-size: medium;
+        cursor: pointer;
+        margin: 2px;
+        width: 23vh;
+       }
+       input{
+        width: 32vh;
+        padding:15px;
+        border-radius: 20px;
+        border-style:solid;
+        border-width: 1px;
+       }
+       .datapay{
+        width:95vh;
+        height: 40vh;
+        background: #FAF9F9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+       }
+       .cardpay{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+       }
+       .datapay button{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border-width: 1px;
+        margin-left: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.694);
+        background-color:white;
+        border-style: none;
+        cursor: pointer;
+        transition: background-color 0.6s ease;
+       }
+       .datapay button:active,
+       .datapay button:focus {
+        background-color: #000000a0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+       .Applepay{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        
+       }
+       .ontimepay{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+       }
+       .ordercontenr{
+        display: flex;
+       flex-direction: column;
+       align-items: end;
+       }
+       .fastorder{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+
+       }
+       .fastorderbutton{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border-width: 1px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.694);
+        background-color:white;
+        border-style: none;
+        margin: 2px;
+        cursor: pointer;
+        transition: background-color 0.6s ease;
+       }
+       .fastorderbutton:active,
+       .fastorderbutton:focus {
+        background-color: #000000a0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+       .order img{
+        width: 100%;
+        height: 80%;
+       }
+       .order{
+        width:95vh;
+        height: 40vh;
+        background: #FAF9F9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content:space-around;
+       }
+       .dataorder{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items:center;
+
+       }
+       .Finish-order-button{
+        padding: 8px;
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        font-size: medium;
+        cursor: pointer;
+        margin: 2px;
+        width: 23vh;
+       }
+       .imgorder{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+       }
+       .imgorderbutton{
+        display: flex;
+        justify-content:space-between;
+       }
+       .imgorderbutton button{
+        padding: 8px;
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        font-size: medium;
+        cursor: pointer;
+        width: 23vh;
+       }
+        .foter{
+        width: 100%;
+        height:300px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-around;
+        align-items: center;
+        background-color: rgb(10, 10, 10);
+        }
+        .foter h1{
+        font-weight: bold;
+        color: white;
+        }
+        .brodect h2{
+        color: white;
+        }
+       .brodectul li{
+        font-size: medium;
+        list-style:none;
+        margin-top: 18px;
+        font-weight: bold;
+        color: white;
+        transition: 0.5s ease;
+        cursor: pointer;
+        }
+        .brodectul li:hover{
+            font-size: x-large; 
+        }
+
+       .subscripdiv{
+        display: flex;
+        flex-direction: column;
+       }
+       .subscripdiv h2{
+        color: white;
+       }
+       .butnensubscrip{
+        padding: 10px;
+        width:15vh;
+        font-weight: bold;
+        background-color: white;
+        border-style: none;
+        transition: 0.9s ease;
+        cursor: pointer;
+        border-style:none;
+        border-radius: 5px;
+        }
+        .butnensubscrip:hover{
+        background-color: rgba(255, 255, 255, 0.637);
+          
+        }
+       
+       .intersubscrip{
+        padding: 10px;
+        width:40vh;
+        background-color: white;
+        border-style: none;
+       }
+       
+
+
+    </style>
+</head>
+<body>
+    <nav class="navpar">
+        
+        <ul class="navparimg">
+            <li><img src="https://sterima.be/wp-content/uploads/2023/02/Group-126.png" alt=""></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHHgdQ6OnPiMPw1txGxyGMmCGwCWSdWPHflvxfJXYB1wFzBQry" alt=""></li>
+            <li><img src="https://www.pngkey.com/png/full/500-5003325_white-heart-outline-thick-clip-art-at-clker.png" alt=""></li>
+            <li><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzXyAC-okZu3KzsYrwpc9FKiHe0fA1L7lBax12mSEYpFUm6EpY" alt=""></li>
+        </ul>
+        <ul class="navparprodect">
+            <li>عبايات</li>
+            <li>فساتين</li>
+            <li>جلابيات</li>
+            <li>حجابات</li>
+            <li>اكسسوارات</li>
+        </ul>
+        <p>رُقي</p>
+    </nav>
+
+
+
+    <div class="contenrsalry">
+        <h1>خاصية الدفع الامن</h1>
+        <div class="adressecontenr">
+            <h1>عنوانك المحلي</h1>
+            <div class="dataadresse">
+                <div class="adresscontenrright">
+                    <input type="text" id="name" name="name" placeholder="الأسم">
+                    <input type="text" id="Streetname" name="Streetname" placeholder="اسم الشارع">
+                    <input type="text" id="Regionname" name="Regionname" placeholder="المنطقة">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="adresscontenrleft">
+                    <input type="text" id="mobilenumber" name="mobilenumber" placeholder="رقم الجوال">
+                    <input type="text" id="buildingnumber" name="buildingnumber" placeholder=" رقم المبنى">
+                    <input type="text" id="city" name="city" placeholder=" المدينة">
+                    <button class="buttondataadresse">أضافة العنوان</button>
+                </div>
+             
+            </div>
+        </div>
+        <div class="adressecontenr">
+            <h1> طريقة الدفع</h1>
+            <div class="datapay">
+               <div class="cardpay">
+                <h3>بطاقة الصراف</h3>
+                <div><button></button></div>
+                </div> 
+
+               <div class="Applepay">
+                <h3>Apple pay</h3>
+                <div><button></button></div>
+               </div> 
+               <div class="ontimepay">
+                <h3>الدفع عند الاستلام + 11 ر.س</h3>
+                <div><button></button></div>
+               </div> 
+               
+             
+            </div>
+        </div>
+        <div class="ordercontenr">
+            <h1> ملخص الطلب</h1>
+            <div class="order"> 
+                <div class="imgorder">
+                     <img src="https://via.placeholder.com/340x430">
+                     <div class="imgorderbutton">
+                        <button>المفضلة</button>
+                        <button>ازالة المنتج</button>
+                     </div>
+                </div>
+                <div class="dataorder">
+                    <h3>عدد القطع</h3>
+                    <h3>المبلغ الاجمالي<span>cost</span></h3>
+                    <div class="fastorder">
+                        <h3>التوصيل السريع + 11 ر.س</h3>
+                        <div><button class="fastorderbutton"></button></div>
+                    </div> 
+                    <div><button class="Finish-order-button">أتمام الشراء</button></div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+    <div class="foter">
+        
+        <h1 class="foterh2">رُقي</h1>
+        <div class="brodect">
+            <h2>الأقسام</h2>
+            <ul class="brodectul">
+                <li>عبايات</li>
+                <li>فساتين</li>
+                <li>جلابيات</li>
+                <li>حجابات</li>
+                <li>اكسسوارات</li>
+            </ul>
+        </div>
+        <div class="subscripdiv">
+            <h2>اشتركي مع رقي لتصلك اخر الأخبار</h2>
+            <div class="subscrip">
+                <button class="butnensubscrip">اشتراك</button>
+                <input class="intersubscrip" type="text" id="intersubscrip" name="username" placeholder="ادخل الايميل">
+            </div>
+        </div>
+    </div>
+    <script>
+
+document.querySelector(".buttondataadresse").addEventListener("click", () => {
+  const nameInput = document.getElementById("name");
+  const streetInput = document.getElementById("Streetname");
+  const regionInput = document.getElementById("Regionname");
+  const mobileInput = document.getElementById("mobilenumber");
+  const buildingInput = document.getElementById("buildingnumber");
+  const cityInput = document.getElementById("city");
+
+  const name = nameInput.value.trim();
+  const street = streetInput.value.trim();
+  const region = regionInput.value.trim();
+  const mobile = mobileInput.value.trim();
+  const building = buildingInput.value.trim();
+  const city = cityInput.value.trim();
+
+  if (name.length < 2) {
+    alert("يرجى إدخال اسم لا يقل عن حرفين أحرف !");
+    return;
+  }
+
+  if (street.length < 3) {
+    alert("يرجى إدخال اسم الشارع لا يقل عن ثلاثة أحرف !");
+    return;
+  }
+
+  if (region.length < 2) {
+    alert("يرجى إدخال اسم المنطقة لا يقل عن حرفين !");
+    return;
+  }
+
+  if (mobile.length < 10) {
+    alert("يرجى إدخال رقم الجوال المكون من 10 أرقام على الأقل !");
+    return;
+  }
+
+  if (building.length === 0) {
+    alert("يرجى إدخال رقم المبنى.");
+    return;
+  }
+
+  if (city.length < 2) {
+    alert("يرجى إدخال اسم المدينة لا يقل عن حرفين! ");
+    return;
+  }
+  alert("تم الحفظ بنجاح.");
+});
+
+
+    </script>          
+</body>
+</html>

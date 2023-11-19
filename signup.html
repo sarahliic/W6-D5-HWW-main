@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+         margin: 0;
+           
+        }
+        .navpar{
+            width: 100%;
+            height: 86px;
+           display: flex;
+           justify-content:space-between;
+           align-items: center;
+           background-color: rgb(10, 10, 10);
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        .navparprodect{
+
+            list-style: none;
+            display: flex;
+            font-family: Poppins;
+            font-weight: 600;
+            word-wrap: break-word;
+            color: white;
+        }
+        .navparprodect li{
+            margin-left: 10px;
+            transition: 0.5s ease;
+            cursor: pointer;
+        }
+        .navparprodect li:hover{
+            font-size: larger;
+        }
+        .navpar p{
+            font-family: Poppins;
+            font-size: large;
+            font-weight: 600;
+            word-wrap: break-word;
+            color: white;
+            padding-right: 20px;
+        }
+        .navparimg{
+            display: flex;
+            flex-direction: row;
+            list-style:none;
+        }
+        .navparimg li{
+            margin-left: 30%;
+
+        }
+        .navparimg li img {
+             width: 20px; 
+             transition: 0.5s ease;
+             cursor: pointer;
+        }
+        .navparimg li img:hover{
+            width: 23px; 
+        }
+        .contenr1{
+            width: 100%;
+            height: 65vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .logindiv{
+            width: 30%;
+            height: 87vh;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #FAF9F9;
+            border-radius: 20px;
+            padding:40px ;
+            
+        }
+
+        h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 40px;
+        }
+        .logo {
+            width: 10%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .div {
+        margin-bottom: 20px;
+        direction: rtl;
+        text-align: right;
+        }
+
+        .div label{
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+        font-weight: bold;
+        font-size:medium;
+        }
+
+        .div input {
+        width: 100%;
+        padding: 12px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 20px;
+        background-color: #f7f7f7;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        color: #333;
+        }
+
+        .butnen {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .forgotpassword{
+        font-size:small;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        color: black;
+        
+        }
+        .butnendiv{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .contenubutton{
+            padding: 12px 10px;
+            width: 100%;
+            font-size:medium;
+            cursor: pointer;
+            border-radius: 27px;
+            color: white;
+            background-color: rgb(17, 17, 17);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            transition: 0.9s ease;
+            cursor: pointer;
+            border-style:none;
+        }
+        .contenubutton:hover{
+            background-color: rgba(26, 24, 24, 0.603);
+          
+        }
+        .end{
+            height:18vh;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+        }
+
+        .foter{
+            width: 100%;
+            height:300px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content:space-around;
+            align-items: center;
+            background-color: rgb(10, 10, 10);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        .foter h1{
+            font-weight: bold;
+            color: white;
+        }
+        .brodect h2{
+            color: white;
+        }
+       .brodectul li{
+        font-size: medium;
+        list-style:none;
+        margin-top: 18px;
+        font-weight: bold;
+        color: white;
+        transition: 0.5s ease;
+        cursor: pointer;
+        }
+        .brodectul li:hover{
+            font-size: x-large; 
+        }
+
+       .subscripdiv{
+        display: flex;
+        flex-direction: column;
+       }
+       .subscripdiv h2{
+        color: white;
+       }
+       .butnensubscrip{
+        padding: 10px;
+        width:15vh;
+        font-weight: bold;
+        background-color: white;
+        border-style: none;
+        transition: 0.9s ease;
+        cursor: pointer;
+        border-style:none;
+        border-radius: 5px;
+        }
+        .butnensubscrip:hover{
+        background-color: rgba(255, 255, 255, 0.637);
+          
+        }
+       
+       .intersubscrip{
+        padding: 10px;
+        width:40vh;
+        background-color: white;
+        border-style: none;
+       }
+       .butnen{
+        display: flex;
+        justify-content: end;
+       
+       }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navpar">
+        <ul class="navparimg">
+            <li><img src="https://sterima.be/wp-content/uploads/2023/02/Group-126.png" alt=""></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHHgdQ6OnPiMPw1txGxyGMmCGwCWSdWPHflvxfJXYB1wFzBQry" alt=""></li>
+            <li><img src="https://www.pngkey.com/png/full/500-5003325_white-heart-outline-thick-clip-art-at-clker.png" alt=""></li>
+            <li><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzXyAC-okZu3KzsYrwpc9FKiHe0fA1L7lBax12mSEYpFUm6EpY" alt=""></li>
+        </ul>
+        <ul class="navparprodect">
+            <li>عبايات</li>
+            <li>فساتين</li>
+            <li>جلابيات</li>
+            <li>حجابات</li>
+            <li>اكسسوارات</li>
+        </ul>
+        <p>رُقي</p>
+    </nav>
+    <div class="contenr1">
+        <div class="logindiv">
+            <h2>أنشاء حساب</h2>
+        <div class="div">
+            <label for="username"> اسم المستخدم:</label>
+            <input type="text" id="username" name="username" placeholder="ادخل اسم المستخدم اوالايميل">
+            <br>
+        </div>
+        <div class="div">
+            <label for="password">رقم الجوال:</label>
+            <input type="password" id="password" name="password" placeholder="ادخل رقم الجوال">
+        </div>
+        <div class="div">
+            <label for="email"> البريد الألكتروني:</label>
+            <input type="text" id="email" name="username" placeholder="ادخل البريد الألكتروني">
+            <br>
+        </div>
+        <div class="div">
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" name="password" placeholder="ادخل كلمة المرور">
+        </div>
+        <div class="div">
+            <label for="password">اعادة كلمة المرور:</label>
+            <input type="password" id="rpassword" name="password" placeholder="ادخل اعادة كلمة المرور">
+        </div>
+        <div class="end">
+        <div class="butnen">
+            <a class="forgotpassword" href="index.html" class="buten-account"> لدي حساب</a>
+        </div>
+        <div class="butnendiv">
+        <button class="contenubutton" id="contenubutton">أستمرار</button>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="foter">
+        
+        <h1 class="foterh2">رُقي</h1>
+        <div class="brodect">
+            <h2>الأقسام</h2>
+            <ul class="brodectul">
+                <li>عبايات</li>
+                <li>فساتين</li>
+                <li>جلابيات</li>
+                <li>حجابات</li>
+                <li>اكسسوارات</li>
+            </ul>
+        </div>
+        <div class="subscripdiv">
+            <h2>اشتركي مع رقي لتصلك اخر الأخبار</h2>
+            <div class="subscrip">
+                <button class="butnensubscrip">اشتراك</button>
+                <input class="intersubscrip" type="text" id="intersubscrip" name="username" placeholder="ادخل الايميل">
+            </div>
+        </div>
+    </div> 
+    <script src="script.js"></script>         
+</body>
+</html>

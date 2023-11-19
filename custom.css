@@ -1,0 +1,299 @@
+/* *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+// المنتجات
+color: black;
+ font-size: 20px;
+ font-family: Roboto;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// حجاب أبيض وأسود
+color: black;
+ font-size: 16px;
+ font-family: Montserrat;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// $75.00
+color: black;
+ font-size: 16px;
+ font-family: Montserrat;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// جلابية بيضاء
+color: black;
+ font-size: 16px;
+ font-family: Montserrat;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// $145.00
+color: black;
+ font-size: 16px;
+ font-family: Montserrat;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// عباية سوداء
+color: black;
+ font-size: 16px;
+ font-family: Montserrat;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// $38.00
+color: black;
+ font-size: 16px;
+ font-family: Montserrat;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// اضف إلى حقيبة التسوق
+color: white;
+ font-size: 15px;
+ font-family: Roboto;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// اضف إلى حقيبة التسوق
+color: white;
+ font-size: 15px;
+ font-family: Roboto;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// اضف إلى حقيبة التسوق
+color: white;
+ font-size: 15px;
+ font-family: Roboto;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// الأقسام
+color: white;
+ font-size: 20px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// عبايات
+color: white;
+ font-size: 12px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// جلابيات
+color: white;
+ font-size: 12px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// حجابات
+color: white;
+ font-size: 12px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// اكسسوارات
+color: white;
+ font-size: 12px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// فساتين
+color: white;
+ font-size: 12px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// رُقي
+color: white;
+ font-size: 35px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// ادخلي بريدك الإلكتروني
+color: black;
+ font-size: 11.55px;
+ font-family: Open Sans;
+ font-weight: 400;
+ line-height: 17.33px;
+ word-wrap: break-word
+---
+// اشتراك
+color: black;
+ font-size: 16px;
+ font-family: Roboto;
+ font-weight: 700;
+ line-height: 17.33px;
+ word-wrap: break-word
+---
+// اشتركي مع رُقي لتصلك آخر الأخبار
+color: white;
+ font-size: 16px;
+ font-family: Roboto;
+ font-weight: 700;
+ line-height: 17.33px;
+ word-wrap: break-word
+---
+// Step inside, for <br/>comfort and magic <br/>await you.
+color: white;
+ font-size: 66px;
+ font-family: Noto Serif Lao;
+ font-weight: 700;
+ line-height: 74px;
+ word-wrap: break-word
+---
+// رقم واحد في الموضة
+color: white;
+ font-size: 20px;
+ font-family: Roboto;
+ font-weight: 700;
+ letter-spacing: 3px;
+ word-wrap: break-word
+---
+// خصم حتى 60%
+color: white;
+ font-size: 16px;
+ font-family: Montserrat;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// اختاري الأناقة التي تعكس قيمك وإيمانك
+color: white;
+ font-size: 50px;
+ font-family: Roboto;
+ font-weight: 800;
+ text-transform: uppercase;
+ word-wrap: break-word
+---
+// تسوق الآن
+color: white;
+ font-size: 16px;
+ font-family: Montserrat;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// عبايات
+color: #131212;
+ font-size: 14px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// فساتين
+color: #131212;
+ font-size: 14px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// جلابيات
+color: #131212;
+ font-size: 14px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// حجابات
+color: #131212;
+ font-size: 14px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// اكسسوارات
+color: #131212;
+ font-size: 14px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// رُقي
+color: #131212;
+ font-size: 25px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+---
+// توصيل مجاني لجميع مناطق المملكة عند الطلب بقيمة 200 ريال
+color: white;
+ font-size: 16px;
+ font-family: Rubik;
+ font-weight: 400;
+ line-height: 22px;
+ word-wrap: break-word
+---
+// BRAND NEW
+color: #BC897B;
+ font-size: 16px;
+ font-family: Hind Jalandhar;
+ font-weight: 300;
+ letter-spacing: 1.12px;
+ word-wrap: break-word
+---
+// BRAND NEW
+color: #2F5177;
+ font-size: 16px;
+ font-family: Hind Jalandhar;
+ font-weight: 300;
+ letter-spacing: 1.12px;
+ word-wrap: break-word
+---
+// فساتين<br/>
+color: #405563;
+ font-size: 32px;
+ font-family: Hind Jalandhar;
+ font-weight: 700;
+ letter-spacing: 2.40px;
+ word-wrap: break-word
+---
+// MOST WANTED
+color: #2F5177;
+ font-size: 16px;
+ font-family: Hind Jalandhar;
+ font-weight: 300;
+ letter-spacing: 1.20px;
+ word-wrap: break-word
+---
+// حقائب
+color: #C08E82;
+ font-size: 32px;
+ font-family: Hind Jalandhar;
+ font-weight: 700;
+ letter-spacing: 2.24px;
+ word-wrap: break-word
+---
+// نظارات
+color: #847E7E;
+ font-size: 16px;
+ font-family: Hind Jalandhar;
+ font-weight: 300;
+ letter-spacing: 1.12px;
+ word-wrap: break-word
+---
+// قباعات<br/>عصرية<br/>
+color: #6F4C37;
+ font-size: 24px;
+ font-family: Hind Jalandhar;
+ font-weight: 600;
+ letter-spacing: 1.08px;
+ word-wrap: break-word
+---
+// حجابات حديثة
+color: #867A75;
+ font-size: 32px;
+ font-family: Hind Jalandhar;
+ font-weight: 600;
+ line-height: 39.36px;
+ word-wrap: break-word */

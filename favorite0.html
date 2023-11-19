@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           margin: 0;
+        }
+        .navpar{
+           width: 100%;
+           height: 86px;
+           display: flex;
+           justify-content:space-between;
+           align-items: center;
+           background-color: rgb(10, 10, 10);
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    
+        }
+        .navparprodect{
+
+            list-style: none;
+            display: flex;
+            font-family: Poppins;
+            font-weight: 600;
+            word-wrap: break-word;
+            color: white;
+        }
+        .navparprodect li{
+            margin-left: 10px;
+            transition: 0.5s ease;
+            cursor: pointer;
+        }
+        .navparprodect li:hover{
+            font-size: larger;
+        }
+        .navpar p{
+            font-family: Poppins;
+            font-size: large;
+            font-weight: 600;
+            word-wrap: break-word;
+            color: white;
+            padding-right: 20px;
+        }
+        .navparimg{
+            display: flex;
+            flex-direction: row;
+            list-style:none;
+        }
+        .navparimg li{
+            margin-left: 30%;
+
+        }
+        .navparimg li img {
+             width: 20px; 
+             transition: 0.5s ease;
+             cursor: pointer;
+        }
+        .navparimg li img:hover{
+            width: 23px; 
+        }
+        .content{
+            width: 100%;
+            height:auto;
+        }
+      
+        .contenr1{
+            width: 100%;
+            height:15vh ;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        .tocontinu{
+            padding: 5px 12vh;
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+            font-size: medium;
+            cursor: pointer;
+        }
+
+        .foter{
+            width: 100%;
+            height:300px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content:space-around;
+            align-items: center;
+            background-color: rgb(10, 10, 10);
+        }
+        .foter h1{
+            font-weight: bold;
+            color: white;
+        }
+        .brodect h2{
+            color: white;
+        }
+       .brodectul li{
+        font-size: medium;
+        list-style:none;
+        margin-top: 18px;
+        font-weight: bold;
+        color: white;
+        transition: 0.5s ease;
+        cursor: pointer;
+        }
+        .brodectul li:hover{
+            font-size: x-large; 
+        }
+
+       .subscripdiv{
+        display: flex;
+        flex-direction: column;
+       }
+       .subscripdiv h2{
+        color: white;
+       }
+       .butnensubscrip{
+        padding: 10px;
+        width:15vh;
+        font-weight: bold;
+        background-color: white;
+        border-style: none;
+        transition: 0.9s ease;
+        cursor: pointer;
+        border-style:none;
+        border-radius: 5px;
+        }
+        .butnensubscrip:hover{
+        background-color: rgba(255, 255, 255, 0.637);
+          
+        }
+       
+       .intersubscrip{
+        padding: 10px;
+        width:40vh;
+        background-color: white;
+        border-style: none;
+       }
+       .prodectfavorite{
+        width: 100%;
+        height: 80vh;
+        }
+        .prodectfavorite{
+            width: 100%;
+            height:auto;
+            display: flex;
+            justify-content: center;
+          
+            
+        }
+        .plusfavorite{
+            width: 300px;
+            height: 500px;
+            display: flex;
+            justify-content:end;
+            align-items:center;
+            margin-right:  20PX;
+        }
+        .plusfavorite button{
+            background: #FAF9F9;
+            border-style: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 8px 11px;
+            margin-right: 15PX;
+            cursor: pointer;
+        }
+        .favoriteimg{
+            width: 300px;
+            height: 500px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #FAF9F9;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .favoriteimg button{
+            width: 22vh;
+            padding: 8px ;
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+            font-size: medium;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .divfavoriteimgbutton{
+            display: flex;
+            justify-content: center;
+        }
+        .favoriteimg img{
+            width: 300px;
+            height: 400px; 
+        }
+        hr{
+            margin: 20px;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.772);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contenr2{
+            width: 100%;
+            height: 70vh;
+        }
+        .praoserbutton{
+            display: flex;
+            justify-content: center;
+        }
+        .praoserbutton button{
+            padding: 8px 10vh;
+            color: black;
+            background: #FAF9F9;
+            font-size: medium;
+            border-style:none;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .choosprodect{
+            display: flex;
+            justify-content:space-evenly;
+        }
+        .choosprodect1{
+            width:28% ;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .choosprodect1 img{
+            width: 100%;
+            height: 28vh;
+        }
+        .choosprodect1 button{
+            padding: 8px 8vh;
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+            font-size: medium;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navpar">
+        
+        <ul class="navparimg">
+            <li><img src="https://sterima.be/wp-content/uploads/2023/02/Group-126.png" alt=""></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHHgdQ6OnPiMPw1txGxyGMmCGwCWSdWPHflvxfJXYB1wFzBQry" alt=""></li>
+            <li><img src="https://www.pngkey.com/png/full/500-5003325_white-heart-outline-thick-clip-art-at-clker.png" alt=""></li>
+            <li><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzXyAC-okZu3KzsYrwpc9FKiHe0fA1L7lBax12mSEYpFUm6EpY" alt=""></li>
+        </ul>
+        <ul class="navparprodect">
+            <li>عبايات</li>
+            <li>فساتين</li>
+            <li>جلابيات</li>
+            <li>حجابات</li>
+            <li>اكسسوارات</li>
+        </ul>
+        <p>رُقي</p>
+    </nav>
+
+    <div class="content" id="content">
+    <div class="contenr1">
+        <div>
+            <button class="tocontinu" id="tocontinu">متابعة التسوق</button>
+        </div>
+        <h1>مفضلاتك</h1>
+    </div>
+    <div class="prodectfavorite" id="prodectfavorite">
+        <div class="plusfavorite">
+            <div><button id="coenternumber">1</button></div>
+            <div><button id="coenterplus">+</button></div>     
+        </div>
+        <div class="favoriteimg" id="favoriteimg"> 
+            <img src="https://via.placeholder.com/340x430">
+            <div class="divfavoriteimgbutton">
+                <button id="divfavoriteimgbutton">ازالة المنتج</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <hr>
+    <div class="contenr2">
+    <div class="praoserbutton">
+        <div><button>تصفح منتجاتنا المشابهة</button></div>
+    </div>
+    <div class="choosprodect">
+        <div class="choosprodect1">
+            <img src="https://via.placeholder.com/340x430">
+            <div><button id="choosprodect1">اضف في عربية التسوق</button></div>
+        </div>
+        <div class="choosprodect1">
+            <img src="https://via.placeholder.com/340x430">
+            <div><button id="choosprodect2">اضف في عربية التسوق</button></div>
+        </div>
+    </div>
+    
+</div>
+    <div class="foter">
+        
+        <h1 class="foterh2">رُقي</h1>
+        <div class="brodect">
+            <h2>الأقسام</h2>
+            <ul class="brodectul">
+                <li>عبايات</li>
+                <li>فساتين</li>
+                <li>جلابيات</li>
+                <li>حجابات</li>
+                <li>اكسسوارات</li>
+            </ul>
+        </div>
+        <div class="subscripdiv">
+            <h2>اشتركي مع رقي لتصلك اخر الأخبار</h2>
+            <div class="subscrip">
+                <button class="butnensubscrip">اشتراك</button>
+                <input class="intersubscrip" type="text" id="intersubscrip" name="username" placeholder="ادخل الايميل">
+            </div>
+        </div>
+    </div>
+  
+    <script>
+document.getElementById("choosprodect1").addEventListener("click", () => {
+
+    let prodectfavorite = document.createElement('div');
+    prodectfavorite.className = "prodectfavorite";
+    prodectfavorite.id = "prodectfavorite";
+
+    let plusfavorite = document.createElement('div');
+    plusfavorite.className = "plusfavorite";
+
+    let button1 = document.createElement('button');
+    counterButton.id = "coenternumber";
+    button1.textContent = "1";
+
+    let buttonPlus = document.createElement('button');
+    plusButton.id = "coenterplus";
+    buttonPlus.textContent = "+";
+
+    plusfavorite.appendChild(document.createElement('div').appendChild(button1));
+    plusfavorite.appendChild(document.createElement('div').appendChild(buttonPlus));
+
+    let favoriteimg = document.createElement('div');
+    favoriteimg.className = "favoriteimg";
+    favoriteimg.id = "favoriteimg";
+
+    let img = document.createElement('img');
+    img.src = "https://via.placeholder.com/340x430";
+
+    let divfavoriteimgbutton = document.createElement('div');
+    divfavoriteimgbutton.className = "divfavoriteimgbutton";
+
+    let removeButton = document.createElement('button');
+    removeButton.id = "divfavoriteimgbutton";
+    removeButton.textContent = "ازالة المنتج";
+
+    divfavoriteimgbutton.appendChild(removeButton);
+
+    favoriteimg.appendChild(img);
+    favoriteimg.appendChild(divfavoriteimgbutton);
+
+    prodectfavorite.appendChild(plusfavorite);
+    prodectfavorite.appendChild(favoriteimg);
+
+    content.appendChild(prodectfavorite);
+
+removeButton.addEventListener("click", () => {
+    prodectfavorite.parentNode.removeChild(prodectfavorite);
+
+});
+
+buttonPlus.addEventListener("click", () => {
+  counter++;
+  counterButton.textContent = counter.toString();
+});
+ 
+});
+document.getElementById("choosprodect2").addEventListener("click", () => {
+
+    let prodectfavorite = document.createElement('div');
+    prodectfavorite.className = "prodectfavorite";
+    prodectfavorite.id = "prodectfavorite";
+
+    let plusfavorite = document.createElement('div');
+    plusfavorite.className = "plusfavorite";
+
+    let button1 = document.createElement('button');
+    counterButton.id = "coenternumber";
+    button1.textContent = "1";
+
+    let buttonPlus = document.createElement('button');
+    plusButton.id = "coenterplus";
+    buttonPlus.textContent = "+";
+
+    plusfavorite.appendChild(document.createElement('div').appendChild(button1));
+    plusfavorite.appendChild(document.createElement('div').appendChild(buttonPlus));
+
+    let favoriteimg = document.createElement('div');
+    favoriteimg.className = "favoriteimg";
+    favoriteimg.id = "favoriteimg";
+
+    let img = document.createElement('img');
+    img.src = "https://via.placeholder.com/340x430";
+
+    let divfavoriteimgbutton = document.createElement('div');
+    divfavoriteimgbutton.className = "divfavoriteimgbutton";
+
+    let removeButton = document.createElement('button');
+    removeButton.id = "divfavoriteimgbutton";
+    removeButton.textContent = "ازالة المنتج";
+
+    divfavoriteimgbutton.appendChild(removeButton);
+
+    favoriteimg.appendChild(img);
+    favoriteimg.appendChild(divfavoriteimgbutton);
+
+    prodectfavorite.appendChild(plusfavorite);
+    prodectfavorite.appendChild(favoriteimg);
+
+    content.appendChild(prodectfavorite);
+
+removeButton.addEventListener("click", () => {
+    
+    prodectfavorite.parentNode.removeChild(prodectfavorite);
+    
+ 
+});
+buttonPlus.addEventListener("click", () => {
+  counter++;
+  counterButton.textContent = counter.toString();
+  
+});
+});
+ 
+
+
+document.getElementById("divfavoriteimgbutton").addEventListener("click", () => {
+  let favoriteimg = document.getElementById("prodectfavorite");
+  prodectfavorite.parentNode.removeChild(prodectfavorite);
+});
+
+document.getElementById("tocontinu").addEventListener("click", () => {
+  window.location.href = "salry.html";
+});
+
+let counterButton = document.getElementById("coenternumber");
+let plusButton = document.getElementById("coenterplus");
+
+let counter = parseInt(counterButton.textContent);
+
+plusButton.addEventListener("click", () => {
+  counter++;
+  counterButton.textContent = counter.toString();
+});
+
+
+    </script>          
+</body>
+</html>
